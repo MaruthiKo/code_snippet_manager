@@ -61,12 +61,12 @@ function addSnippet(snippetName, snippetCode) {
   
       const editButton = document.createElement('button');
       editButton.innerText = 'Edit';
-      editButton.className = 'btn btn-accent';
+      editButton.className = 'btn btn-warning';
       editButton.addEventListener('click', () => showEditForm(snippet.id, snippet.name, snippet.code));
   
       const deleteButton = document.createElement('button');
       deleteButton.innerText = 'Delete';
-      deleteButton.className = 'btn btn-accent';
+      deleteButton.className = 'btn btn-warning';
       deleteButton.addEventListener('click', () => deleteSnippet(snippet.id));
   
       snippetElement.appendChild(nameElement);
@@ -119,6 +119,7 @@ function showEditForm(id, snippetName, snippetCode) {
   
     const updateButton = document.createElement('button');
     updateButton.type = 'submit';
+    updateButton.className = 'btn btn-outline btn-warning';
     updateButton.innerText = 'Update';
   
     editForm.appendChild(nameInput);
