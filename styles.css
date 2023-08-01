@@ -1,14 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  body{
+    font-family: 'Roboto', sans-serif;
   }
-  
   .container {
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(3, 3, 3, 0.1);
   }
   
   h1 {
@@ -17,6 +13,15 @@ body {
   
   form {
     margin-bottom: 20px;
+  }
+  
+  form input,form textarea{
+    background-color: #fffff0;
+    padding: 0.25rem;
+    margin: 0.5rem;
+    color: black;
+    border: 0.5rem solid #fffff0;
+    border-radius: 0.5rem;
   }
   
   input, textarea, button {
@@ -31,5 +36,29 @@ body {
     margin-bottom: 10px;
   }
   
+  .snippet h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .snippet h3, .snippet p{
+    background-color: #fffff0;
+    padding: 0.25rem;
+    margin: 0.5rem;
+    color: black;
+    border: 0.5rem solid #fffff0;
+    border-radius: 0.5rem;
+  }
+
+  .snippet p{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .buttons{
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 1rem;
+  }
   /* Add more CSS styling to customize your app's appearance */
   

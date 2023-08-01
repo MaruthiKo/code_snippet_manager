@@ -50,25 +50,30 @@ function addSnippet(snippetName, snippetCode) {
     existingSnippets.forEach(snippet => {
       const snippetElement = document.createElement('div');
       snippetElement.className = 'snippet';
+      const buttonsElement = document.createElement('div');
+      buttonsElement.className = 'buttons';
   
       const nameElement = document.createElement('h3');
       nameElement.innerText = snippet.name;
   
-      const codeElement = document.createElement('pre');
+      const codeElement = document.createElement('p');
       codeElement.innerText = snippet.code;
   
       const editButton = document.createElement('button');
       editButton.innerText = 'Edit';
+      editButton.className = 'btn btn-accent';
       editButton.addEventListener('click', () => showEditForm(snippet.id, snippet.name, snippet.code));
   
       const deleteButton = document.createElement('button');
       deleteButton.innerText = 'Delete';
+      deleteButton.className = 'btn btn-accent';
       deleteButton.addEventListener('click', () => deleteSnippet(snippet.id));
   
       snippetElement.appendChild(nameElement);
       snippetElement.appendChild(codeElement);
-      snippetElement.appendChild(editButton);
-      snippetElement.appendChild(deleteButton);
+      buttonsElement.appendChild(editButton);
+      buttonsElement.appendChild(deleteButton);
+      snippetElement.appendChild(buttonsElement);
   
       snippetsContainer.appendChild(snippetElement);
     });

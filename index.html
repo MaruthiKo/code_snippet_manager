@@ -5,20 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Snippet Manager</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="navbar bg-base-100">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-white normal-case text-xl">Code Snip</a>
+      </div>
+      <div class="flex-none">
+        <button class="btn btn-primary" id="clearAllButton">
+          Clear all
+        </button>
+      </div>
+    </div>
+  </header>  
+    <h1 class="font-extrabold text-center text-4xl text-white">Code Snippet Manager</h1>
+
+
   <div class="container">
-    <h1>Code Snippet Manager</h1>
-    <form id="snippetForm">
+    <form id="snippetForm" class="m-4 p-4">
       <input type="text" id="snippetName" placeholder="Snippet Name" required>
-      <textarea id="snippetCode" placeholder="Snippet Code" required></textarea>
-      <button type="submit">Add Snippet</button>
+      <textarea id="snippetCode" placeholder="Snippet Code" class="mt-4" required></textarea>
+      <button type="submit" class="btn btn-warning">Add Snippet</button>
     </form>
     <div class="snippets" id="snippets">
       <!-- Display snippets here -->
     </div>
   </div>
-  <button id="clearAllButton">Clear All</button>
   <script src="script.js"></script>
 </body>
 </html>
