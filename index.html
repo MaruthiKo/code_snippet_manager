@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Snippet Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Code Snippet Manager</h1>
+    <form id="snippetForm">
+      <input type="text" id="snippetName" placeholder="Snippet Name" required>
+      <textarea id="snippetCode" placeholder="Snippet Code" required></textarea>
+      <button type="submit">Add Snippet</button>
+    </form>
+    <div class="snippets" id="snippets">
+      <!-- Display snippets here -->
+    </div>
+  </div>
+  <button id="clearAllButton">Clear All</button>
+  <script src="script.js"></script>
+</body>
+</html>
