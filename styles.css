@@ -55,7 +55,7 @@
     font-weight: 300;
   }
   .buttons{
-    width: 10%;
+    width: 20%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
